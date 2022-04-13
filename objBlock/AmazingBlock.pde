@@ -21,8 +21,4 @@ class AmazingBlock extends Block {
     if (angle >= 360) angle = 0;
     if (x > width || x < 0) sx = -sx;
   }
-  void run() {
-    display();
-    move();
-  }
 }

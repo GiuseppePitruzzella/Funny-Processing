@@ -8,7 +8,6 @@ class Cifrotta extends Cifra {
   }
   
   void display() {
-    println(num, x, y);
     PFont font = createFont("Montserrat.ttf", 32);
     textFont(font);
     noFill();
@@ -18,16 +17,10 @@ class Cifrotta extends Cifra {
     fill(255);
     text(num, x, y);
   }
-  
   void move() {
     y -= speed;
     if (y < 0) {
       y = height;
     }
-  }
-  
-  void run() {
-    display();
-    move();
   }
 }

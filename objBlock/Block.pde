@@ -21,7 +21,6 @@ class Block {
   }
   void move() {
     x += sx;
-    
     if (x > width - w || x < 0)
       sx = -sx;
   }

@@ -6,6 +6,8 @@ void setup() {
   x = random(0, width - w);
   y = random(0, height / 2);
   B = new Block(x, y, w, h);
+  x = random(0, width - w);
+  y = random(0, height / 2);
   AB = new AmazingBlock(x, y, w, h);
 }
 void draw() {

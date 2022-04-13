@@ -3,7 +3,6 @@ class Motorcycle extends Bike {
     super(x, y, speed);
     dim = 40;
   }
-  
   void display() {
     PFont font = createFont("Montserrat.ttf", 24);
     textFont(font);
@@ -15,15 +14,8 @@ class Motorcycle extends Bike {
     circle(x, y, dim);
     circle(x + dim + (dim/2), y, dim);
   }
-  
   void move() {
     x -= speed;
     if (x < 0) x = width;
   }
-  
-  void run() {
-    display();
-    move();
-  }
-  
 }
